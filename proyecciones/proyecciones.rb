@@ -25,7 +25,7 @@ ventas_nvo.map!{|e| e.to_i}
 #print "#{ventas_nvo} \n"
 
 result=[proyeccion(ventas_nvo,10,0,5),proyeccion(ventas_nvo,20,6,11)]
-#print "#{result} \n"
+#print "#{result} \n" 
 
 CSV.open('resultados.data','w') do |csv|
     result.each do |r|
